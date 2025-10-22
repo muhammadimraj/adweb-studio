@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Div from '../../components/common/Div';
+import Div from '../Div';
 const serviceData = [
   {
     title: 'WP Development',

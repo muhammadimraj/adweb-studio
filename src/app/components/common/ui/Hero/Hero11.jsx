@@ -2,8 +2,8 @@ import React from 'react';
 import parse from 'html-react-parser';
 import Button from '../Button';
 import SocialWidget from '../Widget/SocialWidget';
-import imgUrl from '../../../../public/images/hero_img_5.png'
 import Image from 'next/image';
+import imgUrl from '@/../public/images/hero_img_5.png';
 
 export default function Hero11({
   introTitle,

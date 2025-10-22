@@ -1,5 +1,5 @@
 'use client'
-import Hero6 from "@/app/ui/Hero/Hero6";
+import Hero6 from "@/app/components/common/ui/Hero/Hero6";
 
 const heroSocialLinks = [
   {

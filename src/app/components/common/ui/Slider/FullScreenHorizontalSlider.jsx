@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, Navigation } from "swiper/modules";
 import { Icon } from "@iconify/react";
 import parse from "html-react-parser";
-import Div from "../../components/common/Div";
+import Div from "../Div";
 import Link from "next/link";
 
 export default function FullScreenHorizontalSlider({ data }) {

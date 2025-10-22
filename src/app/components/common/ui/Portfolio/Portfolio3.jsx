@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../Button'
-import Div from '../../components/common/Div'
+import Div from '../Div'
 import Spacing from '../Spacing'
 
 export default function Portfolio3({title, subtitle, btnText, btnLink, imageUrl, category}) {

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Div from "../../components/common/Div";
+import Div from "../Div";
 
 export default function MovingText2({ data, reverseDirection }) {
   return (

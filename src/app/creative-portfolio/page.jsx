@@ -4,7 +4,7 @@ import Cta from "@/app/components/common/ui/Cta";
 import Div from "@/app/components/common/ui/Div";
 import Hero3 from "@/app/components/common/ui/Hero/Hero3";
 import LogoList from "@/app/components/common/ui/LogoList";
-import MovingText from "@/app/ui/MovingText";
+import MovingText from "@/app/components/common/ui/MovingText";
 import Portfolio2 from "@/app/components/common/ui/Portfolio/Portfolio2";
 import Portfolio3 from "@/app/components/common/ui/Portfolio/Portfolio3";
 import SectionHeading from "@/app/components/common/ui/SectionHeading";

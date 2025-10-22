@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { Icon } from '@iconify/react';
 import Testimonial from '../Testimonial';
-import Div from '../../components/common/Div';
+import Div from '../Div';
 import Spacing from '../Spacing';
 const testimonialData = [
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Div from '../../components/common/Div';
+import Div from '../Div';
 import Slider from 'react-slick';
 import TestimonialStyle2 from '../Testimonial/TestimonialStyle2';
 const testimonialData = [
