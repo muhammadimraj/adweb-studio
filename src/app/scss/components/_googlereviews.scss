@@ -1,0 +1,114 @@
+.cs-google_reviews {
+  display: inline-block;
+  
+  .cs-google_reviews_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+  }
+
+  .cs-google_logo {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    
+    svg {
+      height: 28px;
+      width: auto;
+    }
+  }
+
+  .cs-google_reviews_content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cs-rating_text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #202124;
+    white-space: nowrap;
+  }
+
+  .cs-stars {
+    display: flex;
+    gap: 2px;
+    
+    .cs-star {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+
+  .cs-review_count {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5f6368;
+    white-space: nowrap;
+  }
+
+  // Responsive
+  @media screen and (max-width: 575px) {
+    .cs-google_reviews_container {
+      padding: 10px 20px;
+      gap: 10px;
+    }
+
+    .cs-google_logo {
+      padding-right: 10px;
+      
+      svg {
+        height: 24px;
+      }
+    }
+
+    .cs-google_reviews_content {
+      gap: 8px;
+    }
+
+    .cs-rating_text {
+      font-size: 16px;
+    }
+
+    .cs-stars .cs-star {
+      font-size: 16px;
+    }
+
+    .cs-review_count {
+      font-size: 14px;
+    }
+  }
+}
+
+// Variant: Centered
+.cs-google_reviews.cs-center {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+// Variant: Full width
+.cs-google_reviews.cs-full_width {
+  display: block;
+  width: 100%;
+  
+  .cs-google_reviews_container {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
