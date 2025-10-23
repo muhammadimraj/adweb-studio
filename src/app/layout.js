@@ -5,16 +5,16 @@ import Footer from "@/app/components/common/ui/Footer";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./scss/index.scss";
-import { Poppins, Open_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
-const poppins = Poppins({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--primary-font",
 });
-const openSans = Open_Sans({
+const plusJakartaSansSecondary = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--secondary-font",
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/images/logo.png" type="image/png" />
         <title>Arino Creative Agency Next JS Template</title>
       </head>
-      <body className={`${openSans.variable} ${poppins.variable}`}>
+      <body className={`${plusJakartaSans.variable} ${plusJakartaSansSecondary.variable}`}>
         <Header />
         <CustomCursor />
         {children}

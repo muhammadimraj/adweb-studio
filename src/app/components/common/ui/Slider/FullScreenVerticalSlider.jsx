@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Navigation } from "swiper/modules";
+import { Mousewheel, Navigation, Pagination } from "swiper/modules";
 import { Icon } from "@iconify/react";
 import parse from "html-react-parser";
 import Div from "../../ui/Div";
@@ -68,10 +68,13 @@ export default function FullScreenVerticalSlider({ data }) {
           slidesPerView={1}
           spaceBetween={0}
           mousewheel={true}
-          pagination={false}
+          pagination={{
+            clickable: true,
+            type: 'bullets',
+          }}
           speed={1000}
           loop={false}
-          modules={[Mousewheel, Navigation]}
+          modules={[Mousewheel, Navigation, Pagination]}
           className="mySwiper"
           navigation={{
             nextEl: ".image-swiper-button-next",

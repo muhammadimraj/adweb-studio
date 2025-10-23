@@ -1,5 +1,14 @@
+.cs-fooer{
+  background-color: $white;
+}
 .cs-fooer_main {
-  padding: 95px 0 35px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0 35px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('/images/map.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cs-footer_item {
@@ -97,7 +106,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     overflow: hidden;
     &:before {
@@ -187,10 +196,18 @@
 // Global Offices Styling
 .cs-footer_global_offices {
   padding: 50px 0;
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    > [class*="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
   .cs-footer_title {
     font-size: 48px;
     font-weight: 700;
-    color: $white;
+    color: $black;
     margin-bottom: 60px;
     @media (max-width: 991px) {
       font-size: 36px;
@@ -205,7 +222,7 @@
 
 .cs-office_card {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   .cs-office_image {
     display: flex;
     justify-content: center;
@@ -220,7 +237,7 @@
   .cs-office_city {
     font-size: 22px;
     font-weight: 700;
-    color: $white;
+    color: $black;
     margin-bottom: 15px;
     @media (max-width: 991px) {
       font-size: 20px;
@@ -229,7 +246,7 @@
   .cs-office_address {
     font-size: 14px;
     line-height: 1.6;
-    color: $secondary;
+    color: #666;
     margin-bottom: 15px;
     min-height: 60px;
     @media (max-width: 991px) {
@@ -239,8 +256,8 @@
   }
   .cs-office_phone {
     font-size: 18px;
-    font-weight: 600;
-    color: $white;
+    font-weight: 700;
+    color: $black;
     text-decoration: none;
     display: block;
     &:hover {
@@ -257,7 +274,7 @@
   border-radius: 10px;
   .cs-contact_text {
     font-size: 20px;
-    color: $white;
+    color: $black;
     margin: 0;
     @media (max-width: 991px) {
       font-size: 18px;
@@ -269,7 +286,7 @@
   .cs-email_link {
     color: $accent;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     &:hover {
       text-decoration: underline;
     }
@@ -277,7 +294,7 @@
 }
 
 .cs-bottom_footer {
-  background-color: $black;
+  background-color: $white;
   border-top: none;
   .cs-bottom_footer_in {
     display: flex;
@@ -290,14 +307,14 @@
     }
   }
   .cs-copyright {
-    color: $white;
+    color: $black;
     font-size: 14px;
   }
   .cs-footer_social {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     a {
-      color: $white;
+      color: $black;
       font-size: 20px;
       transition: all 0.3s ease;
       &:hover {

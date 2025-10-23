@@ -69,15 +69,39 @@ export default function Header({ variant }) {
                               href="/service"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Services
+                              All Services
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/service/service-details"
+                              href="/service/web-design"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Service Details
+                              Web Design
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/ui-ux-design"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              UI/UX Design
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/app-development"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              App Development
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/social-media-marketing"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Social Media Marketing
                             </Link>
                           </li>
                         </ul>

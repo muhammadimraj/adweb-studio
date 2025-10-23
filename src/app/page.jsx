@@ -11,8 +11,8 @@ import Review from "@/app/components/pages/review";
 import MeetingBanner from "@/app/components/pages/meeting-banner";
 import Faq from "@/app/components/pages/faq";
 import Awards from "@/app/components/pages/award";
-import TimelineSlider from "@/app/components/common/ui/Slider/TimelineSlider";
 import Spacing from "@/app/components/common/ui/Spacing";
+
 // FunFact Data
 const funfaceData = [
   {
@@ -30,6 +30,46 @@ const funfaceData = [
   {
     title: "Digital products",
     factNumber: "550",
+  },
+];
+
+// Awards Badge Data
+const badgeData = [
+  {
+    imgUrl: '/images/badge/clutch.png',
+    alt: 'Clutch',
+  },
+  {
+    imgUrl: '/images/badge/designrush.png',
+    alt: 'DesignRush',
+  },
+  {
+    imgUrl: '/images/badge/facebook-meta-business-partner.jpg',
+    alt: 'Facebook Meta Business Partner',
+  },
+  {
+    imgUrl: '/images/badge/goodfirms.png',
+    alt: 'GoodFirms',
+  },
+  {
+    imgUrl: '/images/badge/google-partner.png',
+    alt: 'Google Partner',
+  },
+  {
+    imgUrl: '/images/badge/provenexpert.png',
+    alt: 'ProvenExpert',
+  },
+  {
+    imgUrl: '/images/badge/superbcompanies.png',
+    alt: 'Superb Companies',
+  },
+  {
+    imgUrl: '/images/badge/techbehemoths.png',
+    alt: 'TechBehemoths',
+  },
+  {
+    imgUrl: '/images/badge/trustpilot.png',
+    alt: 'Trustpilot',
   },
 ];
 
@@ -94,7 +134,36 @@ export default function Home() {
               <Spacing lg="90" md="45" />
             </Div>
             <Div className="col-xl-7 offset-xl-1">
-              <TimelineSlider />
+              <Div className="row">
+                {badgeData.map((item, index) => (
+                  <Div key={index} className="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <Div 
+                      className="cs-badge_wrapper" 
+                      style={{ 
+                        padding: '20px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: '160px',
+                        backgroundColor: '#f8f9fa',
+                        borderRadius: '10px',
+                        transition: 'transform 0.3s ease'
+                      }}
+                    >
+                      <img 
+                        src={item.imgUrl} 
+                        alt={item.alt} 
+                        style={{ 
+                          maxWidth: '100%', 
+                          height: 'auto',
+                          maxHeight: '120px',
+                          objectFit: 'contain'
+                        }} 
+                      />
+                    </Div>
+                  </Div>
+                ))}
+              </Div>
             </Div>
           </Div>
         </Div>

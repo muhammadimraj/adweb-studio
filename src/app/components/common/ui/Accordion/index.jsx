@@ -17,6 +17,16 @@ const accordionData = [
     answer:
       'Absolutely! All our websites are fully responsive and optimized for mobile devices, tablets, and desktops. We also implement SEO best practices from the ground up, including proper meta tags, fast loading speeds, clean code structure, and search engine-friendly URLs to help your website rank better in search results.',
   },
+  {
+    question: 'What is the cost of developing a website?',
+    answer:
+      'The cost of website development depends on various factors including design complexity, features, functionality, and number of pages. A basic website typically starts from AED 5,000, while more advanced websites with custom features can range from AED 10,000 to AED 50,000+. We offer transparent pricing and provide detailed quotes after understanding your specific requirements during our free consultation.',
+  },
+  {
+    question: 'Can you help with website content and copywriting?',
+    answer:
+      'Yes, we offer professional content creation and copywriting services as part of our web design packages. Our experienced content writers can create engaging, SEO-optimized content that resonates with your target audience and effectively communicates your brand message. We also provide content strategy, blog writing, and ongoing content management services.',
+  },
 ];
 
 export default function Accordion() {

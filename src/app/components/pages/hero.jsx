@@ -33,7 +33,7 @@ export default function Hero({
       <Div className="cs-hero_video_overlay" />
 
       {/* Content Layer */}
-      <Div className="cs-hero_content_wrapper">
+      <Div className="cs-hero_content_wrapper ipad-content">
         {/* Start Google Reviews Section */}
         <Spacing lg="100" md="60" />
         <Div className="container">

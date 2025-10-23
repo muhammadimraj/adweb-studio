@@ -31,20 +31,6 @@ const serviceData = [
     imgUrl: '/images/social-media.jpg',
     href: '/service/service-details',
   },
-  {
-    title: 'Logo & Branding',
-    subtitle:
-      'Build memorable brand identity that sets you apart.\nDistinctive logos and comprehensive brand guidelines.\nCreate lasting impressions and foster customer loyalty.',
-    imgUrl: '/images/logo-brand.jpg',
-    href: '/service/service-details',
-  },
-  {
-    title: 'Search Engine Optimization',
-    subtitle:
-      'Dominate search rankings and increase organic traffic.\nProven SEO strategies boosting visibility and qualified leads.\nOptimize every aspect for maximum search performance.',
-    imgUrl: '/images/service_2.jpeg',
-    href: '/service/service-details',
-  },
 ];
 
 export default function ServiceList({ variant }) {
