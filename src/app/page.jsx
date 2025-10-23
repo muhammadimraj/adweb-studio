@@ -9,6 +9,7 @@ import Portfolio from "@/app/components/pages/portfolio";
 import FunFact from "@/app/components/pages/funfact";
 import Review from "@/app/components/pages/review";
 import MeetingBanner from "@/app/components/pages/meeting-banner";
+import ContactUs from "@/app/components/pages/contact-us";
 import Faq from "@/app/components/pages/faq";
 import Awards from "@/app/components/pages/award";
 import Spacing from "@/app/components/common/ui/Spacing";
@@ -184,6 +185,10 @@ export default function Home() {
         />
       </Div>
       {/* End MeetingBanner Section */}
+
+      {/* Start ContactUs Section */}
+      <ContactUs />
+      {/* End ContactUs Section */}
     </>
   );
 }
