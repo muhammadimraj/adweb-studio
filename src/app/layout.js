@@ -2,6 +2,7 @@
 import Header from "@/app/components/common/ui/Header";
 import CustomCursor from "@/app/components/common/ui/CustomCursor";
 import Footer from "@/app/components/common/ui/Footer";
+import WhatsAppButton from "@/app/components/common/ui/WhatsAppButton";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./scss/index.scss";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

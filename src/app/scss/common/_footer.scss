@@ -1,4 +1,4 @@
-.cs-fooer{
+.cs-footer_inner{
   background-color: $white;
 }
 .cs-fooer_main {
@@ -297,8 +297,10 @@
 }
 
 .cs-bottom_footer {
-  background-color: $white;
+  background-color: $black;
   border-top: none;
+  width: 80%;
+  margin: 0 auto;
   .cs-bottom_footer_in {
     display: flex;
     justify-content: space-between;
@@ -310,14 +312,14 @@
     }
   }
   .cs-copyright {
-    color: $black;
+    color: $white;
     font-size: 14px;
   }
   .cs-footer_social {
     display: flex;
     gap: 20px;
     a {
-      color: $black;
+      color: $white;
       font-size: 20px;
       transition: all 0.3s ease;
       &:hover {

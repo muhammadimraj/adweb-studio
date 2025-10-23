@@ -1,0 +1,100 @@
+.cs-whatsapp_button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+
+  svg {
+    width: 34px;
+    height: 34px;
+    color: #ffffff;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    background: #128C7E;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  // Animation pulse effect
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #25D366;
+    opacity: 0.5;
+    animation: whatsapp-pulse 2s ease-out infinite;
+  }
+
+  // Tablet and smaller
+  @media (max-width: 991px) {
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    right: 25px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 575px) {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  // Very small mobile
+  @media (max-width: 360px) {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
