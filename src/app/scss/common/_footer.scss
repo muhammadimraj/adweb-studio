@@ -248,9 +248,10 @@
   .cs-office_address {
     font-size: 14px;
     line-height: 1.6;
-    color: #666;
+    color: $black;
     margin-bottom: 15px;
     min-height: 60px;
+    font-weight: 600;
     @media (max-width: 991px) {
       font-size: 13px;
       min-height: auto;

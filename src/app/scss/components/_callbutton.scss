@@ -1,0 +1,660 @@
+.cs-call_button {
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #2B5CA8;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(43, 92, 168, 0.4);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    color: #ffffff;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(43, 92, 168, 0.6);
+    background: #1e4380;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  // Animation pulse effect
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #2B5CA8;
+    opacity: 0.5;
+    animation: call-pulse 2s ease-out infinite;
+  }
+
+  // Tablet and smaller
+  @media (max-width: 991px) {
+    width: 55px;
+    height: 55px;
+    bottom: 100px;
+    right: 25px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 575px) {
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 20px;
+
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  // Very small mobile
+  @media (max-width: 360px) {
+    width: 45px;
+    height: 45px;
+    bottom: 80px;
+    right: 15px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@keyframes call-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+// Modal Styles
+.cs-modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.cs-modal_content {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  @media (max-width: 767px) {
+    padding: 30px 25px;
+    max-width: 500px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+}
+
+.cs-modal_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: #999;
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+    
+    svg {
+      color: #333;
+    }
+  }
+
+  @media (max-width: 575px) {
+    top: 15px;
+    right: 15px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.cs-modal_header {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    color: #2B5CA8;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.cs-modal_form {
+  .cs-form_group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      color: #2B5CA8;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 8px;
+
+      @media (max-width: 575px) {
+        font-size: 13px;
+      }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid #c4c4c4;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+      color: #333;
+      background: #ffffff;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #2B5CA8;
+        box-shadow: 0 0 0 3px rgba(43, 92, 168, 0.1);
+      }
+
+      &:hover {
+        border-color: #999;
+      }
+
+      @media (max-width: 575px) {
+        padding: 12px 14px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cs-phone_input_wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  .cs-phone_input {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    flex: 1;
+    position: relative;
+
+    .cs-country_code {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 12px;
+      border: 2px solid #c4c4c4;
+      border-radius: 8px;
+      background: #ffffff;
+      min-width: 140px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+      height: 48px;
+
+      &:hover {
+        border-color: #999;
+        background: #f8f9fa;
+      }
+
+      &:active {
+        background: #f0f4f8;
+      }
+
+      @media (max-width: 575px) {
+        min-width: 120px;
+        padding: 0 10px;
+        gap: 6px;
+      }
+
+      .cs-flag {
+        width: 28px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        flex-shrink: 0;
+
+        @media (max-width: 575px) {
+          width: 24px;
+          height: 18px;
+        }
+      }
+
+      .cs-arrow {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        
+        svg {
+          width: 18px;
+          height: 18px;
+          color: #666;
+          transition: transform 0.2s ease;
+        }
+      }
+
+      .cs-code {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        font-family: inherit;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .cs-phone_number {
+      flex: 1;
+      padding: 14px 16px;
+      border: 2px solid #c4c4c4;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+      color: #333;
+      background: #ffffff;
+      height: 48px;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #2B5CA8;
+        box-shadow: 0 0 0 3px rgba(43, 92, 168, 0.1);
+      }
+
+      &:hover {
+        border-color: #999;
+      }
+
+      @media (max-width: 575px) {
+        padding: 12px 14px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cs-country_dropdown {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    background: #ffffff;
+    border: 2px solid #c4c4c4;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 8px;
+    z-index: 10000;
+    max-height: 360px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: dropdownSlide 0.2s ease;
+
+    @media (max-width: 575px) {
+      min-width: 280px;
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+
+  .cs-country_search {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #999;
+      flex-shrink: 0;
+    }
+
+    input {
+      flex: 1;
+      border: none;
+      background: #f8f9fa;
+      font-size: 14px;
+      outline: none;
+      font-family: inherit;
+      color: #333;
+      padding: 8px 12px;
+      border-radius: 6px;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      &:focus {
+        background: #fff;
+        box-shadow: 0 0 0 2px rgba(43, 92, 168, 0.1);
+      }
+    }
+  }
+
+  .cs-country_list {
+    overflow-y: auto;
+    flex: 1;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+
+      &:hover {
+        background: #a8a8a8;
+      }
+    }
+  }
+
+  .cs-country_item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f5f5f5;
+
+    &:hover {
+      background: #f8f9fa;
+      padding-left: 20px;
+    }
+
+    &.active {
+      background: #e8f0f8;
+      border-left: 3px solid #2B5CA8;
+      padding-left: 17px;
+      
+      .cs-country_code_text {
+        color: #2B5CA8;
+        font-weight: 700;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 575px) {
+      padding: 12px 14px;
+      gap: 12px;
+    }
+
+    .cs-country_flag {
+      width: 32px;
+      height: 24px;
+      object-fit: cover;
+      border-radius: 3px;
+      flex-shrink: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: 575px) {
+        width: 28px;
+        height: 21px;
+      }
+    }
+
+    .cs-country_name {
+      flex: 1;
+      font-size: 14px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+      line-height: 1.4;
+
+      @media (max-width: 575px) {
+        font-size: 13px;
+      }
+
+      .cs-native {
+        color: #999;
+        font-size: 13px;
+        font-weight: 400;
+
+        @media (max-width: 575px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .cs-country_code_text {
+      font-size: 14px;
+      color: #666;
+      font-weight: 600;
+      flex-shrink: 0;
+      min-width: 50px;
+      text-align: right;
+
+      @media (max-width: 575px) {
+        font-size: 13px;
+        min-width: 45px;
+      }
+    }
+  }
+
+  .cs-call_submit_btn {
+    padding: 14px 32px;
+    background: #C4C4C4;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    white-space: nowrap;
+    min-width: 130px;
+    height: 48px;
+    align-self: stretch;
+    opacity: 0.5;
+
+    &.active {
+      background: #2B5CA8;
+      cursor: pointer;
+      opacity: 1;
+
+      &:hover {
+        background: #1e4380;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(43, 92, 168, 0.4);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      transform: none;
+
+      &.active {
+        opacity: 0.7;
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 14px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 15px;
+      min-width: 120px;
+    }
+  }
+
+  .cs-submit_message {
+    text-align: center;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .cs-form_note {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    @media (max-width: 575px) {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
