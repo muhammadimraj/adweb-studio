@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="author" content="Laralink" />
         <link rel="icon" href="/images/logo.png" type="image/png" />
-        <title>Arino Creative Agency Next JS Template</title>
+        <title>AD Web Studio</title>
       </head>
       <body className={`${plusJakartaSans.variable} ${plusJakartaSansSecondary.variable}`}>
         <Header />
