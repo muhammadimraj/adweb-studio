@@ -63,32 +63,33 @@
   // Responsive
   @media screen and (max-width: 575px) {
     .cs-google_reviews_container {
-      padding: 10px 20px;
-      gap: 10px;
+      padding: 10px;
+      gap: 3px;
     }
 
     .cs-google_logo {
-      padding-right: 10px;
+      padding-right: 5px;
       
       svg {
         height: 24px;
+        width: 50px;
       }
     }
 
     .cs-google_reviews_content {
-      gap: 8px;
+      gap: 5px;
     }
 
     .cs-rating_text {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .cs-stars .cs-star {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .cs-review_count {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
