@@ -4,11 +4,11 @@ import Div from '../../ui/Div';
 
 const serviceData = [
   {
-    title: 'Web Design',
+    title: 'Web Design & Development',
     subtitle:
-      'Create stunning, responsive websites that captivate audiences.Modern, user-friendly designs optimized for all devices.',
+      'Create stunning, responsive websites that captivate audiences. Modern, user-friendly designs optimized for all devices. Transform your online presence with professional web solutions.',
     imgUrl: '/images/web-design.jpg',
-    href: '/service/service-details',
+    href: '/service/web-design-development',
   },
   {
     title: 'UI/UX Design',

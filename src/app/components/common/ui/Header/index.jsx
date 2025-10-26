@@ -66,26 +66,10 @@ export default function Header({ variant }) {
                         <ul>
                           <li>
                             <Link
-                              href="/service"
+                              href="/service/web-design-development"
                               onClick={() => setMobileToggle(false)}
                             >
-                              All Services
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/service/web-design"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Web Design
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/service/ui-ux-design"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              UI/UX Design
+                              Web Design & Development
                             </Link>
                           </li>
                           <li>
@@ -93,15 +77,23 @@ export default function Header({ variant }) {
                               href="/service/app-development"
                               onClick={() => setMobileToggle(false)}
                             >
-                              App Development
+                              Mobile App Development
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/service/social-media-marketing"
+                              href="/service/search-engine-optimization"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Social Media Marketing
+                              Search Engine Optimization
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/digital-marketing"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Digital Marketing
                             </Link>
                           </li>
                         </ul>

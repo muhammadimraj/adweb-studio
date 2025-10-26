@@ -365,11 +365,9 @@ hr {
 .cs-form_field {
   display: block;
   width: 100%;
-  padding: 10px 20px;
   border-radius: 15px;
   outline: none;
   transition: all 0.3s ease;
-  border: 2px solid #999696;
   background-color: transparent;
   color: #fff;
   &:focus {
@@ -960,7 +958,7 @@ label {
 }
 
 .cs-page_heading.cs-style1 {
-  height: 650px;
+  // height: 650px;
   padding: 120px 0 50px;
   position: relative;
   &::after {
@@ -1096,7 +1094,6 @@ label {
     display: block;
     border: none;
     width: 100%;
-    filter: grayscale(100%) invert(90%) contrast(120%);
   }
   &.cs-type1 {
     height: 100%;
@@ -1545,6 +1542,11 @@ label {
   }
   .cs-masonry_4_col {
     column-count: 1;
+  }
+  .cs-page_heading.cs-style1 {
+    &::after {
+      right: 0px;
+    }
   }
 }
 .cs-grid_gallery_5 {

@@ -1,0 +1,281 @@
+.cs-service_detail_content {
+  padding-right: 40px;
+
+  @media (max-width: 991px) {
+    padding-right: 0;
+  }
+}
+
+.cs-service_detail_image {
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.column-left-img {
+  img{
+    height: 200px;
+  }
+}
+
+.cs-service_detail_subheading {
+  margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.cs-subheading_title {
+  font-size: 26px;
+  font-weight: 700;
+  color: $white;
+  margin: 0;
+  line-height: 1.3;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
+}
+
+.cs-why_choose_section {
+  margin-top: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.cs-additional_images {
+  margin-top: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.cs-industries_section {
+  margin-top: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.cs-industries_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-industry_item {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.cs-lets_turn_section {
+  margin-top: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.cs-lets_turn_text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  margin: 0;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.cs-two_column_images {
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
+
+  .col-md-6 {
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cs-service_detail_closing {
+  margin-top: 40px;
+
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.cs-closing_text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.cs-service_detail_intro {
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.cs-intro_text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  margin: 0;
+
+  strong {
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.cs-service_detail_section {
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.cs-section_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+  }
+}
+
+.cs-services_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-service_list_item {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+  }
+
+  strong {
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+    margin-bottom: 18px;
+    padding-left: 25px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
