@@ -15,7 +15,6 @@ export default function PersonalPortfolioHome() {
           <div className="cs-height_90 cs-height_lg_45" />
           <TestimonialSliderStyle4 />
         </div>
-        <div className="cs-height_150 cs-height_lg_80" />
       </section>
       {/* End Testimonial Section */}
     </>

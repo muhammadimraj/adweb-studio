@@ -13,6 +13,7 @@ import ContactUs from "@/app/components/pages/contact-us";
 import Faq from "@/app/components/pages/faq";
 import Awards from "@/app/components/pages/award";
 import Spacing from "@/app/components/common/ui/Spacing";
+import FeatureSection from "@/app/components/common/ui/FeatureSection";
 
 // FunFact Data
 const funfaceData = [
@@ -118,6 +119,10 @@ export default function Home() {
       {/* Start Testimonial Section */}
       <Review />
       {/* End Testimonial Section */}
+
+      {/* Start Feature Section */}
+      <FeatureSection />
+      {/* End Feature Section */}
 
       {/* Start Awards Section */}
       <Div className="cs-shape_wrap_2">
